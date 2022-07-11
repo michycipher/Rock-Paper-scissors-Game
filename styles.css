@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(90deg, #a6a6a6 23%, #f1f1f1 85%); */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/rocket\ game.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: #eee;
+    margin: -100px 0 50px;
+    font-family: 'Amatic SC', cursive;
+    font-size: clamp(2rem, 2vw + 1.9rem, 5rem);
+    animation: scale-in-center 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in-center {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: #e4e4e4;
+    line-height: 2;
+    font-size: clamp(1.3rem, 2vw + 0rem, 3rem);
+}
+
+button {
+    padding: 12px 15px;
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: #fed095;
+    box-shadow: 10px 10px 20px rgba(166, 166, 166, 1), -10px -10px 20px rgba(241, 241, 241, 1);
+}
+
+#paper {
+    margin: 0 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    /* body {
+        background: #a6a6a6;
+    } */
+
+    button:hover {
+        box-shadow: none;
+    }
+}
